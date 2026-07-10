@@ -15,10 +15,18 @@ npm run dev      # local dev server at http://localhost:4321
 npm run build    # static site in dist/ (also builds the Pagefind search index)
 ```
 
+Requires **Node ≥ 20.3** (the repo pins **Node 22** via `.nvmrc`, matching CI). Use `npm ci` for an install that exactly matches `package-lock.json`.
+
 All images, fonts, video and the original theme CSS are already committed (under
 `public/` and `src/styles/`), so a fresh clone builds offline with no dependency
 on the old WordPress site — which is now frozen and no longer the source of
 truth.
+
+## Documentation
+
+- **`CLAUDE.md`** — guidance for Claude Code / AI agents working in this repo (commands, conventions, and doc-upkeep rules).
+- **`docs/CCAIS-Website-Content-Guide.md`** (with a matching `.pdf`) — the team-facing guide to adding blog/news/project posts and editing team members.
+- Please keep all three — `README.md`, `CLAUDE.md`, and the content guide — up to date when structure, scripts, or workflows change (and regenerate the guide's PDF; the command is in `CLAUDE.md`).
 
 ## Structure
 
