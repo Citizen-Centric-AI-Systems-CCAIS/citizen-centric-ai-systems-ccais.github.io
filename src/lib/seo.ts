@@ -41,6 +41,22 @@ export const orgSchema = {
     'A University of Southampton research group, led by Professor Sebastian Stein, conducting fundamental research into citizen-centric artificial intelligence systems.',
   parentOrganization: { '@type': 'CollegeOrUniversity', name: 'University of Southampton' },
   funder: { '@type': 'Organization', name: 'UK Research and Innovation (UKRI)' },
+  // Topics the group has expertise in — reinforces topical relevance for search
+  // and AI answer engines (e.g. human-centred AI). Keep these truthful to the research.
+  knowsAbout: [
+    'Human-centred AI',
+    'Human-centered AI',
+    'Citizen-centric AI',
+    'Trustworthy AI',
+    'Responsible AI',
+    'Explainable AI',
+    'AI fairness',
+    'Multi-agent systems',
+    'Mechanism design',
+    'Human-in-the-loop AI',
+    'AI for smart energy',
+    'AI for smart transportation'
+  ],
   sameAs: [
     'https://www.linkedin.com/company/ccais/',
     'https://www.youtube.com/@CCAIS_Soton',
