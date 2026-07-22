@@ -26,7 +26,26 @@ export const collections = {
   projects: mk('projects'),
   news: mk('news'),
   blog: mk('blog'),
-  events: mk('events', base.extend({ eventDate: z.coerce.date() })),
+  // Events carry extra structured-data fields for Google Event rich results:
+  // - location:      physical venue name (emitted as a schema.org Place)
+  // - locationUrl:   joining link for an online event (a VirtualLocation instead)
+  //                  Omit both and the event falls back to University of Southampton.
+  // - eventEndDate:  end date/time for multi-day events (emitted as endDate)
+  // - eventStatus:   scheduled (default) | cancelled | postponed | rescheduled | moved-online
+  // - performers:    named speakers/performers
+  events: mk(
+    'events',
+    base.extend({
+      eventDate: z.coerce.date(),
+      eventEndDate: z.coerce.date().optional(),
+      location: z.string().optional(),
+      locationUrl: z.string().optional(),
+      eventStatus: z
+        .enum(['scheduled', 'cancelled', 'postponed', 'rescheduled', 'moved-online'])
+        .optional(),
+      performers: z.array(z.string()).optional()
+    })
+  ),
   impacts: mk('impacts'),
   'open-source': mk('open-source')
 };

@@ -42,9 +42,16 @@ npm run optimize-images  # optional: archive + down-scale oversized images in pu
 | `excerpt` | no | overrides the auto-summary (first paragraph) |
 | `author` | no | team **slug** → adds a byline, lists on their page |
 | `members` | no | list of slugs and/or `{ name, url }` (external, no page) |
-| `eventDate` | events only | `YYYY-MM-DD` |
+| `eventDate` | events only | `YYYY-MM-DD` (the day the event starts) |
+| `eventEndDate` | events, no | `YYYY-MM-DD` — end day for a multi-day event |
+| `location` | events, no | venue name, e.g. `"Highfield Campus, University of Southampton"`. Omit → defaults to University of Southampton |
+| `locationUrl` | events, no | joining link for an **online** event (used instead of `location`) |
+| `eventStatus` | events, no | `scheduled` (default), `cancelled`, `postponed`, `rescheduled` or `moved-online` |
+| `performers` | events, no | list of speaker/performer names |
 
 First paragraph = listing summary + meta description. No image is fine.
+
+The extra event fields above feed Google's Event rich-result data (they surface as *recommended* items in Search Console). Only `eventDate` is required; the rest are optional and safe to omit.
 
 ## Add a post (blog / news / project)
 

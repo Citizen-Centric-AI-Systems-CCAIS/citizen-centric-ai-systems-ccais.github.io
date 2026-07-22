@@ -123,7 +123,39 @@ export function projectSchema(i: Project) {
   return o;
 }
 
-type Ev = { title: string; description: string; image?: string; startISO?: string; path: string };
+// Default venue for events with no explicit location — CCAIS's home institution.
+// Google requires a `location` on every Event for rich-result eligibility.
+const DEFAULT_PLACE = {
+  '@type': 'Place',
+  name: 'University of Southampton',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Southampton',
+    addressCountry: 'GB'
+  }
+};
+
+// Map a short frontmatter keyword to schema.org's eventStatus URL.
+const EVENT_STATUS: Record<string, string> = {
+  scheduled: 'https://schema.org/EventScheduled',
+  cancelled: 'https://schema.org/EventCancelled',
+  postponed: 'https://schema.org/EventPostponed',
+  rescheduled: 'https://schema.org/EventRescheduled',
+  'moved-online': 'https://schema.org/EventMovedOnline'
+};
+
+type Ev = {
+  title: string;
+  description: string;
+  image?: string;
+  startISO?: string;
+  endISO?: string;
+  path: string;
+  location?: string;
+  locationUrl?: string;
+  status?: string;
+  performers?: string[];
+};
 export function eventSchema(i: Ev) {
   const o: Record<string, unknown> = {
     '@context': 'https://schema.org',
@@ -131,11 +163,21 @@ export function eventSchema(i: Ev) {
     name: i.title,
     description: i.description,
     startDate: i.startISO,
+    // Always present; defaults to a scheduled event, overridable per event.
+    eventStatus: EVENT_STATUS[i.status ?? 'scheduled'] ?? EVENT_STATUS.scheduled,
+    location: i.locationUrl
+      ? { '@type': 'VirtualLocation', url: i.locationUrl }
+      : i.location
+        ? { '@type': 'Place', name: i.location, address: i.location }
+        : DEFAULT_PLACE,
     organizer: { '@type': 'Organization', name: ORG_NAME, url: SITE },
     url: abs(i.path),
     mainEntityOfPage: abs(i.path)
   };
+  if (i.endISO) o.endDate = i.endISO;
   if (i.image) o.image = [abs(i.image)];
+  if (i.performers && i.performers.length)
+    o.performer = i.performers.map((name) => ({ '@type': 'Person', name }));
   return o;
 }
 

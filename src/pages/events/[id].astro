@@ -18,7 +18,12 @@ const jsonld = eventSchema({
   title: entry.data.title,
   description,
   image: entry.data.image,
-  startISO: entry.data.date.toISOString(),
+  startISO: (entry.data.eventDate ?? entry.data.date).toISOString(),
+  endISO: entry.data.eventEndDate?.toISOString(),
+  location: entry.data.location,
+  locationUrl: entry.data.locationUrl,
+  status: entry.data.eventStatus,
+  performers: entry.data.performers,
   path: Astro.url.pathname
 });
 ---
