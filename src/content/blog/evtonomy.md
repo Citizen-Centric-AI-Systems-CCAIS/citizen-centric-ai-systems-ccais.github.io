@@ -1,5 +1,5 @@
 ---
-title: "EVtonomy: from research to a Silicon Valley spin-out"
+title: "EVtonomy: from research to a spin-out"
 date: 2023-07-30
 image: "/wp-content/uploads/2023/11/fever-project-image-1-scaled.jpg"
 excerpt: "How EVtonomy — a citizen-centric EV-charging app born from CCAIS research — grew into a spin-out, joining the 2023 Future Worlds cohort and pitching in Silicon Valley."
