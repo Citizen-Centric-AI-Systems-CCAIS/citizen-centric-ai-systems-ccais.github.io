@@ -1,6 +1,6 @@
 # CCAIS Website — Content Guide
 
-Static [Astro](https://astro.build/) site (live at **[www.ccais.ac.uk](https://www.ccais.ac.uk/)**). Content = Markdown files + one team file (`src/data/team.ts`). **Push to `main` → GitHub Actions builds and deploys** (live in a few minutes); nothing is built or uploaded by hand.
+Static [Astro](https://astro.build/) site (live at **[ccais.ac.uk](https://ccais.ac.uk/)**). Content = Markdown files + one team file (`src/data/team.ts`). **Push to `main` → GitHub Actions builds and deploys** (live in a few minutes); nothing is built or uploaded by hand.
 
 ## Access
 

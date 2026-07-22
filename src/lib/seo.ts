@@ -6,7 +6,7 @@
  * the detail templates and handed to Base via its `jsonld` prop, which renders
  * each as a <script type="application/ld+json"> in the <head>.
  */
-export const SITE = 'https://www.ccais.ac.uk';
+export const SITE = 'https://ccais.ac.uk';
 
 /** Absolute URL for a site-relative path (absolute URLs pass through unchanged). */
 export const abs = (p?: string): string | undefined =>

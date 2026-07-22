@@ -5,7 +5,7 @@ Guidance for Claude Code working in this repository. Keep it concise and current
 
 ## What this is
 
-- Static [Astro](https://astro.build/) site for CCAIS, deployed to GitHub Pages at <https://www.ccais.ac.uk>.
+- Static [Astro](https://astro.build/) site for CCAIS, deployed to GitHub Pages at <https://ccais.ac.uk> (canonical host is the **apex**, no `www`; `www` 301-redirects to it).
 - Content lives as Markdown in `src/content/`; the team lives in `src/data/team.ts`.
 - **Deploy = push to `main`** → GitHub Actions (`.github/workflows/deploy.yml`) builds and publishes. Nothing is built or uploaded by hand.
 

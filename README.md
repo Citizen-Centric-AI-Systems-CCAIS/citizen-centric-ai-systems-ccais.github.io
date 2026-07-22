@@ -1,6 +1,6 @@
 # CCAIS website — Astro rebuild
 
-A static rebuild of [ccais.ac.uk](https://www.ccais.ac.uk/) (originally
+A static rebuild of [ccais.ac.uk](https://ccais.ac.uk/) (originally
 WordPress) using [Astro](https://astro.build/). All WordPress content (pages,
 projects, news, blog posts, events, impact, open source) was exported via the
 WP REST API into Markdown content collections, and the original theme
@@ -101,7 +101,9 @@ To reproduce the setup from scratch:
 1. Push the project to a GitHub repository (`main` branch).
 2. In the repo: Settings -> Pages -> Source = **GitHub Actions**.
 3. Push (or run the workflow manually from the Actions tab) — it builds and publishes `dist/`.
-4. Custom domain: Settings -> Pages -> Custom domain = `www.ccais.ac.uk` (this matches `site` in `astro.config.mjs`), then point DNS (CNAME `www` -> `<owner>.github.io`) and tick **Enforce HTTPS**.
+4. Custom domain: Settings -> Pages -> Custom domain = `ccais.ac.uk` (matches `site` in `astro.config.mjs`). Point the apex at GitHub Pages (A records to `185.199.108–111.153`) and add a `www` CNAME -> `<owner>.github.io` so `www` redirects to the apex. The `public/CNAME` file holds `ccais.ac.uk` so the custom domain persists across Actions deploys. Tick **Enforce HTTPS**.
+
+   The canonical host is the **apex** `ccais.ac.uk` (no `www`). Everything that emits URLs — canonical tags, the sitemap, Open Graph tags and `llms.txt` — derives from `site`/`SITE`, so keep those two in sync if the domain ever changes.
 
 Important: the site uses root-absolute asset paths (`/wp-content/...`), so it
 must be served from a domain root — i.e. with a **custom domain** or an
