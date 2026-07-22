@@ -154,7 +154,7 @@ type Ev = {
   location?: string;
   locationUrl?: string;
   status?: string;
-  performers?: string[];
+  performers?: (string | { name: string; affiliation?: string })[];
 };
 export function eventSchema(i: Ev) {
   const o: Record<string, unknown> = {
@@ -177,7 +177,13 @@ export function eventSchema(i: Ev) {
   if (i.endISO) o.endDate = i.endISO;
   if (i.image) o.image = [abs(i.image)];
   if (i.performers && i.performers.length)
-    o.performer = i.performers.map((name) => ({ '@type': 'Person', name }));
+    o.performer = i.performers.map((p) => {
+      const name = typeof p === 'string' ? p : p.name;
+      const person: Record<string, unknown> = { '@type': 'Person', name };
+      if (typeof p !== 'string' && p.affiliation)
+        person.affiliation = { '@type': 'Organization', name: p.affiliation };
+      return person;
+    });
   return o;
 }
 

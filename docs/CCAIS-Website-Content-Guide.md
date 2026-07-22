@@ -47,7 +47,7 @@ npm run optimize-images  # optional: archive + down-scale oversized images in pu
 | `location` | events, no | venue name, e.g. `"Highfield Campus, University of Southampton"`. Omit → defaults to University of Southampton |
 | `locationUrl` | events, no | joining link for an **online** event (used instead of `location`) |
 | `eventStatus` | events, no | `scheduled` (default), `cancelled`, `postponed`, `rescheduled` or `moved-online` |
-| `performers` | events, no | list of speaker/performer names |
+| `performers` | events, no | list of speakers — each a plain name, or `{ name, affiliation }` to credit their organisation |
 
 First paragraph = listing summary + meta description. No image is fine.
 

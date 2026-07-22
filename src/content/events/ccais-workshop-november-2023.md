@@ -3,6 +3,7 @@ title: "CCAIS Workshop November 2023"
 date: 2023-11-15
 image: "/wp-content/uploads/2023/11/Picture-2-scaled.jpg"
 eventDate: 2023-11-23
+location: "The Royal Society, London"
 ---
 
 ##### We will hold our annual workshop on “Citizen-Centric AI Systems” at the Royal Society in central London on 23rd November 2023.

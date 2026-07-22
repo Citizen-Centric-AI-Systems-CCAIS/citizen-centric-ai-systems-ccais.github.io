@@ -43,7 +43,9 @@ export const collections = {
       eventStatus: z
         .enum(['scheduled', 'cancelled', 'postponed', 'rescheduled', 'moved-online'])
         .optional(),
-      performers: z.array(z.string()).optional()
+      performers: z
+        .array(z.union([z.string(), z.object({ name: z.string(), affiliation: z.string().optional() })]))
+        .optional()
     })
   ),
   impacts: mk('impacts'),

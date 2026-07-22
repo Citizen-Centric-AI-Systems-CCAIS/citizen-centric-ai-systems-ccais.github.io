@@ -3,6 +3,12 @@ title: "Citizen-Centric AI Systems Stakeholder Workshop"
 date: 2025-06-11
 image: "/wp-content/uploads/2025/06/4JB6213-scaled.jpg"
 eventDate: 2025-01-30
+location: "The Royal Society, London"
+performers:
+  - name: Cathleen Berger
+    affiliation: Bertelsmann Stiftung
+  - name: Joel Leibo
+    affiliation: Google DeepMind
 ---
 
 We are organising a workshop on Citizen-Centric Artificial Intelligence Systems at the Royal Society in London on 30th January.
