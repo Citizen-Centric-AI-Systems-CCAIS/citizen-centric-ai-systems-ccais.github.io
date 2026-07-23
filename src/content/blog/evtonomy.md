@@ -12,8 +12,4 @@ author: sebastian-stein
 
 Electric vehicles (EVs) promise to help us reach net zero, but CCAIS researchers found in an extensive survey that one third of EV drivers are unhappy with their experience of charging on long journeys. Based on this finding, we developed an app, evtonomy, that uses AI to suggest appropriate charging stops to drivers. Taking a citizen-centric approach, evtonomy learns the driver’s personal preferences for charging, e.g., how to trade off the time and cost of charging, and what facilities are important to the driver. As co-founders of evtonomy, Dr Elnaz Shafipour and Prof Seb Stein were selected for the Future Worlds Cohort 2023, which involved a trip to San Francisco and Silicon Valley. They have also been featured in a recent issue of Southampton’s Re:action magazine, have contributed to a video series on Net Zero by the BCS, and have been awarded support through the Innovate UK Global Business Innovation Programme to meet customers and business partners in Germany.
 
-To find out more and help test the evtonomy app, sign up on their website.
-
-<a aria-label="Sign up here" class="customButton button-primary" href="https://www.evtonomy.com/" target="_blank">Sign up here</a>
-
 For the research behind the app, see the [EVtonomy project page](/projects/evtonomy/).
