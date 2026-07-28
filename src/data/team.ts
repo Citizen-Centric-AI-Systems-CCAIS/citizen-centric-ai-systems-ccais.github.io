@@ -253,6 +253,16 @@ export const team: Member[] = [
     email: "agxl1e22@soton.ac.uk",
     biography: `Adrian Low is an undergraduate student in Electronic Engineering with Artificial Intelligence at the University of Southampton. His summer research explores the use of multi-agent systems to model human behaviour in trust-based decision-making scenarios. By simulating and evaluating agent interactions within trust games, he aims to better understand how artificial agents replicate human patterns of thought and behaviour. His broader interests include large language models, reinforcement learning, and their applications in modelling human behaviour, multi-agent coordination, and social decision-making.`,
   },
+    {
+    slug: "george-hutchinson",
+    name: "George Hutchinson",
+    role: "FEVER Chatbot",
+    group: "Research Engineers / Assistants",
+    photo: img("george-hutchinson.jpg"),
+    email: "gh4g23@soton.ac.uk",
+    websites: ["https://www.linkedin.com/in/george-hutchinson-36b7772b0/"],
+    biography: `George is a third-year MEng student studying computer science at the University of Southampton. He is working as an intern to build Sparky, a conversational AI interface for the FEVER charging point project. The aim of this chatbot is to inform users about what the FEVER project is and its benefits, as well as give charging point usage information to help the user know when they are likely to be free. It utilises retrieval-augmented generation for this.`,
+  },
   // PhD Graduates
   {
     slug: "behrad-koohy",
