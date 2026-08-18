@@ -280,9 +280,6 @@ export const team: Member[] = [
     role: "Inter-generational Influences on Households' Heating Control",
     group: "PhD Graduates",
     photo: img("greg-sewell-sq.jpg"),
-    email: "TBC",
-    websites: ["TBC"],
-    biography: `TBC`,
   },  
   {
     slug: "jack-dymond",
@@ -290,9 +287,6 @@ export const team: Member[] = [
     role: "Progressive Intelligence",
     group: "PhD Graduates",
     photo: img("jack-dymond-sq.jpg"),
-    email: "TBC",
-    websites: ["TBC"],
-    biography: `TBC`,
   },
   {
     slug: "sukankana-chakraborty",
@@ -365,9 +359,6 @@ export const team: Member[] = [
     role: "ENGAGE Intern Voice Modification",
     group: "Alumni",
     photo: img("hannah-phillips-sq.jpg"),
-    email: "TBC",
-    websites: ["TBC"],
-    biography: `TBC`,
   },
   {
     slug: "harris-hadjiantonis",
@@ -447,9 +438,6 @@ export const team: Member[] = [
     role: "Social Choice for Equitable Ridesharing",
     group: "Alumni",
     photo: img("nicos-protopapas.jpg"),
-    email: "TBC",
-    websites: ["TBC"],
-    biography: `TBC`,
   },
 {
     slug: "zijie-liang",
