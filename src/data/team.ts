@@ -211,7 +211,7 @@ export const team: Member[] = [
     group: "PhD Students",
     photo: img("kiarash-kianian.jpg"),
     email: "K.Kianian@soton.ac.uk",
-    biography: `Kiarash Kianian is a PhD student in Computer Science at the University of Southampton. He received his B.Sc. in Computer Engineering from Sharif University of Technology. Before starting his PhD, he worked as a software engineer, developing large-scale backend and distributed software systems. His current research interests include game theory, multi-agent systems, algorithm design, and resource allocation.`,
+    biography: `Kiarash Kianian is a PhD student in Computer Science at the University of Southampton. He received his B.Sc. in Computer Engineering from Sharif University of Technology. Before starting his PhD, he worked as a software engineer, developing large-scale backend and distributed software systems. His current PhD research focuses on developing resource allocation frameworks for sustainable, multi-user cloud and edge environments under operational constraints. As digital infrastructures face stricter environmental and resource limitations, managing shared computational systems requires balancing platform-wide sustainability goals with diverse user performance requirements.`,
   },
   // Research Engineers / Assistants
   {
