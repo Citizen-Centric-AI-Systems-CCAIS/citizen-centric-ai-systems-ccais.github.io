@@ -1,6 +1,20 @@
 [
  {
   "Authors": [
+   "Buermann, Jan",
+   "Cruden, Andrew",
+   "Stein, Sebastian"
+  ],
+  "Title": "Designing personalised residential hybrid battery systems through a two‑tier mixed‑integer and genetic algorithm framework",
+  "Year": 2026,
+  "Venue": "Proceedings of the 13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, BuildSys 2026",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=32cce0dd-e591-449e-8a4c-a5e6a3715db1",
+  "DOI": "10.1145/3744256.3812566",
+  "DOI_URL": "https://doi.org/10.1145/3744256.3812566",
+  "Abstract": "Residential photovoltaic (PV) adoption is increasing, but energy demand rarely aligns with generation. Batteries can increase self-consumption, but selecting appropriate configurations for a given household is challenging, particularly for hybrid systems that provide complementary benefits through multiple technologies, e.g. lithium‑ion and lead‑acid batteries, each with different cost-performance trade-offs, round-trip efficiencies and charge rates. To address this, we present a two‑tier optimisation framework that forms the optimisation core for designing personalised hybrid residential battery configurations. The upper tier uses a genetic algorithm to choose battery configurations, while the lower tier embeds a mixed‑integer program to compute physically consistent daily charge-discharge schedules and corresponding operating costs. Using real-world appliance‑level data from the IDEAL dataset and PV generation from PVGIS, we evaluate hybrid system performance across 161 households.<br/>Results show that personalised hybrid configurations can increase PV self‑consumption by up to 28%, reduce grid‑import costs by up to 93%, and avoid the significant schedule disruption observed in load‑shifting approaches. To contextualise these benefits, we compare against a standard appliance‑level demand‑side management (DSM) baseline implemented using the same optimisation framework, which depends on how inconvenience from appliance schedule changes is measured; we find that DSM outcomes vary strongly with this and often deviate from preferred usage times. Overall, the results demonstrate that hybrid storage design, when tailored to individual households using an integrated optimisation approach, can offer considerable economic and utilisation benefits while avoiding the user disruption commonly associated with DSM‑style schedule shifting."
+ },
+ {
+  "Authors": [
    "Dankloff, Mirthe",
    "Yuan, Yining",
    "Ajmeri, Nirav",
@@ -52,6 +66,21 @@
   "Venue": "25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)",
   "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=8610d926-b6b6-4a8b-a7f1-4bc7347456d5",
   "Abstract": "Long-distance electric vehicle (EV) travel depends critically on charging infrastructure reliability. When stations fail or queues form unexpectedly, drivers face increased range anxiety and risk of getting stranded. In this demonstration paper, we present EVMapSim, a discrete-event simulator for modelling EV navigation and charging behaviour at a national scale. We demonstrate 10,000+ vehicles traversing the UK road network, each making real-time charging decisions while encountering infrastructure failures. EVMapSim supports three failure scenarios, enabling analysis of how infrastructure resilience affects driver outcomes, including wait times, route deviations, and stranding rates."
+ },
+ {
+  "Authors": [
+   "Gerding, Enrico",
+   "Parsons, Simon",
+   "Rădulescu, Roxana",
+   "Swarup, Samarth",
+   "Vale, Zita",
+   "Yazdanpanah, Vahid"
+  ],
+  "Title": "Proceedings of the second international workshop on AI systems for the environment 2026 (AISE 2026)",
+  "Year": 2026,
+  "Venue": "The 2nd International Workshop on AI Systems for the Environment (AISE 2026)",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=a3fc0ef2-ab9e-40a0-8bca-92ffa8dc7c5b",
+  "Abstract": "Welcome to the second edition of AISE, the International Workshop on AI Systems for the Environment. AISE brings together researchers working at the intersection of artificial intelligence and environmental sustainability, with the aim of exploring how AI methods can support more effective and responsible decision-making in complex sustainability domains. Building on the first edition of the workshop, held at ECAI 2025 in Bologna, AISE 2026 provides a focused forum for methodological advances and application-driven research addressing pressing environmental challenges.<br/><br/>Tackling sustainability challenges such as renewable energy management, biodiversity conservation, circular economy design, sustainable agriculture, transportation, and reducing AI's own environmental footprint requires methods that can operate effectively in complex and interconnected settings. AISE therefore welcomes research spanning a broad range of AI areas, including machine learning, optimisation, reinforcement learning, multiagent systems, agent-based modelling, explainable AI, human-in-the-loop methods, and intelligent decision support.<br/><br/>The papers accepted to AISE 2026 reflect this breadth. The first group of contributions are focused on environmental monitoring, agriculture, and the circular economy, addressing topics including the detection of illegal wildlife trade, interpretable crop management, cold hardiness prediction, bulky waste material classification, and explainable urban mining. The second group focuses on sustainable optimisation and intelligent energy systems, with contributions on multiagent reinforcement learning for battery management, optimisation for irregular packing, and multiagent AI for power grid studies.<br/><br/>The workshop also features a keynote by Dr. Hendrik Baier on explainable AI for sequential decision making and its role in sustainable mobility. His talk highlights an important challenge for sustainability-oriented AI that ``\\textit{technically effective optimisation and planning methods will have limited real-world impact if their recommendations cannot be understood, discussed, refined, and trusted by the people expected to use them}''. This perspective complements the broader aims of AISE by connecting optimisation, explainability, human-AI interaction, and sustainability-oriented decision making.<br/><br/>We hope these proceedings provide a useful snapshot of current research on AI systems for environmental sustainability and foster further collaboration across artificial intelligence, optimisation, multiagent systems, environmental science, energy systems, agriculture, mobility, and circular economy research. We thank all authors, reviewers, organisers, session chairs, and participants for contributing to AISE 2026 and to the continuing development of the AISE community.<br/><br/>Further details about AISE 2026 are available on the workshop webpage: https://sites.google.com/view/aise2026 "
  },
  {
   "Authors": [
@@ -186,6 +215,8 @@
   "Year": 2025,
   "Venue": "The European Conference on Artificial Intelligence",
   "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=216b4678-38d4-4e6e-acb2-94ae73881f77",
+  "DOI": "10.3233/FAIA251262",
+  "DOI_URL": "https://doi.org/10.3233/FAIA251262",
   "Abstract": "In modern urban transportation networks, multiple self-interested travel providers (public transit, micromobility providers, ride-sharing platforms and toll roads) compete for heterogenous transportation users that wish to balance time and cost. Traditional congestion models assume fixed, exogenous costs, while dynamic‑pricing frameworks typically focus on a single operator, overlooking the rich strategic interplay among decentralised transportation providers. This paper introduces the Multi‑Market Routing Problem (MMRP), a game‑theoretic model in which each provider utilises adaptive pricing to maximise profit and heterogeneous transportation users which aim to minimise their travel time and cost.<br/><br/>We present the MMRP as an extension of traditional congestion games, and extend it to consider online instances for adaptive pricing under dynamic and stochastic congestion. We demonstrate the computational complexity for game-theoretic and exact solutions to the MMRP, reflecting the computational complexity of coordinating routing in dynamic and uncertain settings. To address this, we propose the use of independent Proximal Policy Optimisation as a decentralised and effective solution to the online MMRP, demonstrating reduced travel times and more equitable and fair outcomes for transportation users, and increased profitability for transportation providers. The MMRP framework and learning algorithms offer a principled foundation for competitive, multimodal routing in modern urban transportation networks."
  },
  {
