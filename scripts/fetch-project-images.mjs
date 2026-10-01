@@ -46,6 +46,12 @@ const IMAGES = [
     credit: 'Photo by Denisse Leon on Unsplash (Unsplash License)',
     url: 'https://images.unsplash.com/photo-1527058918112-6e17a8213943?auto=format&fit=crop&w=1600&q=70',
     dest: 'public/images/projects/school-choice-with-transportation.jpg'
+  },
+  {
+    project: 'blog: fever-chatbot',
+    credit: 'Photo by CHUTTERSNAP on Unsplash (Unsplash License)',
+    url: 'https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?auto=format&fit=crop&w=1600&q=70',
+    dest: 'public/images/news/fever-chatbot-header.jpg'
   }
 ];
 
