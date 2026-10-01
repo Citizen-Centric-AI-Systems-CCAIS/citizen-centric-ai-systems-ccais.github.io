@@ -1,6 +1,21 @@
 [
  {
   "Authors": [
+   "Arcanjo, Bruno",
+   "Buermann, Jan",
+   "Stein, Sebastian",
+   "Cruden, Andrew"
+  ],
+  "Title": "Written response to the Department for Energy Security and Net Zero call for evidence \"Data for AI in the energy system\" - A Case for Standardised and Openly Accessible Electric Vehicle Charge Point Data",
+  "Year": 2026,
+  "Venue": "Written response to the Department for Energy Security and Net Zero call for evidence \"Data for AI in the energy system\" - A Case for Standardised and Openly Accessible Electric Vehicle Charge Point Data",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=a14913e8-ab55-47a6-a425-de4ad738a8bf",
+  "DOI": "10.5258/SOTON/PP0177",
+  "DOI_URL": "https://doi.org/10.5258/SOTON/PP0177",
+  "Abstract": "This response advocates for the provision of a government facilitated and governed interface (API) for live charge point data to enable the development of software and research addressing electric vehicle (EV) driver concerns when planning journeys. While regulations like the Public Charge Point Regulations 2023 mandate that charge point operators make certain data freely available, the current arrangements are impractical for real-world use. Each operator publishes data only for its own network, but this is often inconsistent, unreliable and in non-standard formats, requiring researchers and developers to negotiate access and maintain integrations on a per-operator basis. <br/><br/>Commercial aggregators, such as EcoMovement, address this fragmentation by packaging these data sources and selling access as a service. While this provides a workable solution, it falls short of enabling the Government’s objective of open, freely available charge point data that can be readily used to improve the EV charging experience. In practice, the fragmented and operator-specific nature of current data publication makes large-scale reuse costly and continues to constrain research and innovation.<br/><br/>By enabling reliable, standardised and openly accessible live charge point data on a national scale, the Government would unlock significant benefits across industry, academia and the EV user community. Improved data access would support the development of more accurate driver-facing services, better evidence-based infrastructure planning, and higher-quality research outcomes. Collectively, these improvements would enhance confidence in the public charging network, reduce friction for EV drivers, and support wider EV adoption - helping to advance the UK’s transport decarbonisation and net-zero objectives.<br/>"
+ },
+ {
+  "Authors": [
    "Buermann, Jan",
    "Cruden, Andrew",
    "Stein, Sebastian"
@@ -31,12 +46,14 @@
    "Deshmukh, Jayati",
    "Yazdanpanah, Vahid",
    "Stein, Sebastian",
-   "Ramchurn, Gopal"
+   "Ramchurn, Savapali D."
   ],
   "Title": "The triad of identity, trust and responsibility in multi-agent systems",
   "Year": 2026,
   "Venue": "25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)",
   "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=b22e6fab-5dc1-4782-889f-a06d7ea6cfca",
+  "DOI": "10.65109/VTZX9616",
+  "DOI_URL": "https://doi.org/10.65109/VTZX9616",
   "Abstract": "The design of autonomous AI agents that behave responsibly and foster trust in open multi-agent systems remains a fundamental challenge. Traditional game-theoretical approaches largely assume self-interested behaviour, yet real-world collaborations among humans often rely on prosocial considerations that extend beyond individual utility. To address this, for the first time in this paper, we investigate the triad of identity, responsibility, and trust as core elements shaping responsible multi-agent behaviour. We propose a novel agent model, building on the notion of Computational Transcendence, which equips agents with an elastic sense of identity, enabling them to incorporate the welfare of others into their decision-making. Our framework integrates subjective (identity-based) and objective (experience-based and reputation-based) components of trust. Using Iterated Prisoner’s Dilemma (IPD) simulations on different network structures, we analyse how varying levels of identity and trust affect responsible behaviour. Results demonstrate that the interplay of these three concepts can promote emergent responsibility, mitigate exploitation, and sustain long-term cooperation in dynamic multi-agent environments. We argue that this triadic perspective provides a principled foundation for designing trustworthy, responsible, and identity/value aware agents with implications for future human–AI collaboration."
  },
  {
@@ -65,6 +82,8 @@
   "Year": 2026,
   "Venue": "25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)",
   "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=8610d926-b6b6-4a8b-a7f1-4bc7347456d5",
+  "DOI": "10.65109/WOKO4552",
+  "DOI_URL": "https://doi.org/10.65109/WOKO4552",
   "Abstract": "Long-distance electric vehicle (EV) travel depends critically on charging infrastructure reliability. When stations fail or queues form unexpectedly, drivers face increased range anxiety and risk of getting stranded. In this demonstration paper, we present EVMapSim, a discrete-event simulator for modelling EV navigation and charging behaviour at a national scale. We demonstrate 10,000+ vehicles traversing the UK road network, each making real-time charging decisions while encountering infrastructure failures. EVMapSim supports three failure scenarios, enabling analysis of how infrastructure resilience affects driver outcomes, including wait times, route deviations, and stranding rates."
  },
  {
@@ -81,6 +100,67 @@
   "Venue": "The 2nd International Workshop on AI Systems for the Environment (AISE 2026)",
   "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=a3fc0ef2-ab9e-40a0-8bca-92ffa8dc7c5b",
   "Abstract": "Welcome to the second edition of AISE, the International Workshop on AI Systems for the Environment. AISE brings together researchers working at the intersection of artificial intelligence and environmental sustainability, with the aim of exploring how AI methods can support more effective and responsible decision-making in complex sustainability domains. Building on the first edition of the workshop, held at ECAI 2025 in Bologna, AISE 2026 provides a focused forum for methodological advances and application-driven research addressing pressing environmental challenges.<br/><br/>Tackling sustainability challenges such as renewable energy management, biodiversity conservation, circular economy design, sustainable agriculture, transportation, and reducing AI's own environmental footprint requires methods that can operate effectively in complex and interconnected settings. AISE therefore welcomes research spanning a broad range of AI areas, including machine learning, optimisation, reinforcement learning, multiagent systems, agent-based modelling, explainable AI, human-in-the-loop methods, and intelligent decision support.<br/><br/>The papers accepted to AISE 2026 reflect this breadth. The first group of contributions are focused on environmental monitoring, agriculture, and the circular economy, addressing topics including the detection of illegal wildlife trade, interpretable crop management, cold hardiness prediction, bulky waste material classification, and explainable urban mining. The second group focuses on sustainable optimisation and intelligent energy systems, with contributions on multiagent reinforcement learning for battery management, optimisation for irregular packing, and multiagent AI for power grid studies.<br/><br/>The workshop also features a keynote by Dr. Hendrik Baier on explainable AI for sequential decision making and its role in sustainable mobility. His talk highlights an important challenge for sustainability-oriented AI that ``\\textit{technically effective optimisation and planning methods will have limited real-world impact if their recommendations cannot be understood, discussed, refined, and trusted by the people expected to use them}''. This perspective complements the broader aims of AISE by connecting optimisation, explainability, human-AI interaction, and sustainability-oriented decision making.<br/><br/>We hope these proceedings provide a useful snapshot of current research on AI systems for environmental sustainability and foster further collaboration across artificial intelligence, optimisation, multiagent systems, environmental science, energy systems, agriculture, mobility, and circular economy research. We thank all authors, reviewers, organisers, session chairs, and participants for contributing to AISE 2026 and to the continuing development of the AISE community.<br/><br/>Further details about AISE 2026 are available on the workshop webpage: https://sites.google.com/view/aise2026 "
+ },
+ {
+  "Authors": [
+   "Nicholas, Luke",
+   "Gauthier, Stephanie",
+   "Gerding, Enrico",
+   "Stein, Sebastian"
+  ],
+  "Title": "Towards generative occupants : LLM agents in physics-based building simulation",
+  "Year": 2026,
+  "Venue": "Occupant-Centric Energy Systems",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=3c61d4b5-1195-48c3-8ea8-d19d3f468caa",
+  "DOI": "10.1145/3765611.3813753",
+  "DOI_URL": "https://doi.org/10.1145/3765611.3813753",
+  "Abstract": "<p>Current occupant representations in building simulation often capture schedules, rules, or stochastic variation, but provide limited support for modelling context-dependent and language-mediated decision processes. This paper presents a work-in-progress framework coupling a built-from-scratch physics-based building simulation environment with LLM-driven occupant agents. The simulation core draws on established building simulation approaches and is checked against ASHRAE 140-2023 thermal test cases. The agent architecture uses planning, memory retrieval, action, reflection, and memory update to interact with the simulated environment. An exploratory pilot case study compares fixed-schedule, deterministic rule-based, and LLM-driven occupant representations under identical boundary conditions. The results show that LLM-driven occupants can be coupled to the physics-based simulation loop and can influence simulated energy demand, but should not be interpreted as validation of occupant realism. The paper concludes by outlining an evaluation roadmap for behavioural validation and occupant-centric control applications.</p>"
+ },
+ {
+  "Authors": [
+   "Nicholas, Luke",
+   "Gauthier, Stephanie",
+   "Stein, Sebastian",
+   "Gerding, Enrico"
+  ],
+  "Title": "Poster abstract",
+  "Year": 2026,
+  "Venue": "13th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=7cfc6c87-16e2-468a-a5d0-99dc69f3cb66",
+  "DOI": "10.1145/3765611.3815333",
+  "DOI_URL": "https://doi.org/10.1145/3765611.3815333",
+  "Abstract": "Occupant behaviour remains a major source of uncertainty in building energy modelling. We present a physics-based single-zone simulation environment that integrates LLM-driven occupants and is<br/>validated against ASHRAE 140-2023 cases. Agents use core memories and a decaying short-term memory stream to plan activities and select actions. Initial three-day winter and summer experiments show energy-use patterns that differ from baseline and rule-based occupancy representations."
+ },
+ {
+  "Authors": [
+   "Periyathambi, Ezhilarasi",
+   "Dehghan, Fariba",
+   "Buermann, Jan",
+   "Stein, Sebastian",
+   "Cruden, Andrew"
+  ],
+  "Title": "Written response to the Department for Energy Security and Net Zero call for evidence \"Data for AI in the energy system\" - Privacy-Aware Sharing of Smart Device Data",
+  "Year": 2026,
+  "Venue": "Written response to the Department for Energy Security and Net Zero call for evidence \"Data for AI in the energy system\" - Privacy-Aware Sharing of Smart Device Data",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=c0e7f6b9-0ba7-4a49-8bf5-afe29144c670",
+  "DOI": "10.5258/SOTON/PP0176",
+  "DOI_URL": "https://doi.org/10.5258/SOTON/PP0176",
+  "Abstract": "This evidence is submitted on behalf of a multi-disciplinary University of Southampton team from the EPSRC-funded Programme Grant on Future Electric Vehicle Energy networks supporting Renewables (FEVER, EP/W005883/1) project, which is developing grid-independent EV charging stations, and the Citizen-Centric AI Systems Turing AI Acceleration Fellowship, which investigates building artificial intelligence (AI) systems that can be trusted by all users. The evidence highlights the lack of appliance level energy data as a key barrier to AI enabled applications across residential electricity networks and proposes a privacy preserving, standardised approach for sharing appliance or device level data via smart meters.<br/><br/>Artificial Intelligence (AI) has significant potential to improve the efficiency, affordability, and resilience of the UK energy system. However, realising this potential, particularly in residential and low voltage electricity networks, is currently constrained by the lack of high quality, appliance level energy data. While smart meters provide half hourly aggregate household consumption, they do not offer visibility into the behaviour of individual high impact devices such as Electric Vehicle (EV) chargers, heat pumps, batteries, and electric heating systems.<br/><br/>In the absence of standardised appliance level data, stakeholders rely on either indirect inference, modelling, and estimation approaches - or - on fragmented, proprietary datasets controlled by individual device manufacturers. These approaches introduce uncertainty and increase computational and integration costs, whilst limiting the scalability of AI applications. This, in turn, limits the effectiveness of demand side flexibility, local energy system optimisation and energy management, in addition to low voltage network management, whilst increasing reliance on centralised data collection that raises privacy and security concerns.<br/><br/>This submission proposes an open, standardised protocol that allows smart devices to share appliance-level energy data directly with the smart meter. The smart meter would act as a trusted local data hub - generating, storing, and processing data locally by default, with sharing only happening when the user consents. This approach offers several key benefits: it avoids vendor lock-in at both the data and platform level, improves data quality at source, and supports privacy preserving AI by keeping data local and minimising unnecessary export. It also complements existing government initiatives to improve visibility of distributed energy assets.<br/>"
+ },
+ {
+  "Authors": [
+   "Watson, Connor",
+   "Gauthier, Stephanie",
+   "Vanderwel, Christina",
+   "Stein, Sebastian"
+  ],
+  "Title": "Simulation of temperature in a naturally ventilated office space using machine learning and comparison with traditional whole-building temperature modelling",
+  "Year": 2026,
+  "Venue": "ACM Sustainability Week Companion 2026 - Proceedings of the 2026 ACM Sustainability Week",
+  "URL": "https://eprints.soton.ac.uk/cgi/eprintbypureuuid?uuid=90c76180-f247-4dc8-b235-889400dc7404",
+  "DOI": "10.1145/3765611.3813755",
+  "DOI_URL": "https://doi.org/10.1145/3765611.3813755",
+  "Abstract": "The emerging field of physics-informed machine learning has begun to be utilised for indoor environment prediction and control, offering an alternative to traditional simulation tools. This paper investigates whether machine learning add values to traditional tools of thermal comfort analysis during office building operation.<br/><br/>A machine learning model informed by fluid equations to simulate the indoor environment was created using Nvidia PhysicsNemo, a Python physics informed artificial intelligence framework. DesignBuilder, a whole building energy modelling program using the EnergyPlus simulation engine, was used to compute the same indoor environment to provide a non-AI typical alternative. Both methods of analysis were then compared to real world sensor data gathered over four days, two weekdays and two weekends.<br/><br/>Comparatively to traditional methods, the PINN model performed better, particularly on weekends in which traditional simulation failed to correctly model temperature during a day with high solar gains. Over the four days, the PINN model had a mean absolute error of 0.6° C versus the real data, whereas the building modelling program was 1.4° C. This result may support the shift in modelling tools, as physics-informed machine learning may support more efficient, scalable, and responsive approaches to indoor environmental control and building performance assessment."
  },
  {
   "Authors": [
