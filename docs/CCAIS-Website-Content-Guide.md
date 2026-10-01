@@ -41,7 +41,7 @@ npm run optimize-images  # optional: archive + down-scale oversized images in pu
 | `imageCredit` / `imageCreditUrl` | no | small footer credit (+ optional link) |
 | `excerpt` | no | overrides the auto-summary (first paragraph) |
 | `author` | no | team **slug** → adds a byline, lists on their page |
-| `members` | no | list of slugs and/or `{ name, url }` (external, no page) |
+| `members` | no | list of slugs and/or `{ name, url }` (external, no page); shown as a "Team:" line under the title on project, news and blog pages |
 | `eventDate` | events only | `YYYY-MM-DD` (the day the event starts) |
 | `eventEndDate` | events, no | `YYYY-MM-DD` — end day for a multi-day event |
 | `location` | events, no | venue name, e.g. `"Highfield Campus, University of Southampton"`. Omit → defaults to University of Southampton |
@@ -73,7 +73,7 @@ members:
 Body in Markdown. Lead with a strong first paragraph.
 ```
 
-`author`/`members` are team slugs; inline `{ name, url }` credits an external person with no CCAIS page. Then commit/push (or PR).
+`author`/`members` are team slugs; inline `{ name, url }` credits an external person with no CCAIS page. Members appear in a "Team:" line under the title (team slugs link to the person's page, external entries to `url` if given), and the post is listed on each team member's page. Then commit/push (or PR).
 
 ## Team (`src/data/team.ts`)
 

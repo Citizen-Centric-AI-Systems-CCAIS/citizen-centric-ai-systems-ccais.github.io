@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import MemberList from '../../components/MemberList.astro';
 import { team } from '../../data/team';
 import { excerptOf } from '../../lib/excerpt';
+import { resolveMembers } from '../../lib/members';
 import { clip, articleSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -12,6 +14,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const author = team.find((m) => m.slug === entry.data.author);
+const members = resolveMembers(entry.data.members);
 const fmt = (d) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 const description = clip(excerptOf(entry));
 const jsonld = articleSchema({
@@ -32,6 +35,7 @@ const jsonld = articleSchema({
         <div class="author"><p>{fmt(entry.data.date)}</p></div>
         {author && <div class="author"><p>By <a href={`/author/${author.slug}/`}>{author.name}</a></p></div>}
       </div>
+      <MemberList members={members} />
     </div>
     <div class={`hero-image${entry.data.image ? '' : ' no-image'}`} style={entry.data.image ? `background-image:url('${entry.data.image}')` : undefined}></div>
     <div class="text-block small-container">

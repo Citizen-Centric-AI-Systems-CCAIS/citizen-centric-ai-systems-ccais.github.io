@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-import { team, collaborators } from '../../data/team';
+import MemberList from '../../components/MemberList.astro';
+import { team } from '../../data/team';
 import { excerptOf } from '../../lib/excerpt';
+import { resolveMembers } from '../../lib/members';
 import { clip, projectSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -12,19 +14,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const author = team.find((m) => m.slug === entry.data.author);
-// Each member is either a team slug (-> their /author/ page) or an inline
-// { name, url? } for an external collaborator with no CCAIS page.
-const resolveMember = (m: any) => {
-  if (typeof m === 'string') {
-    const t = team.find((x) => x.slug === m);
-    if (t) return { name: t.name, href: `/author/${t.slug}/`, external: false };
-    const c = collaborators.find((x) => x.slug === m);
-    if (c) return { name: c.name, href: c.url ?? null, external: true };
-    return null;
-  }
-  return { name: m.name, href: m.url ?? null, external: true };
-};
-const members = (entry.data.members ?? []).map(resolveMember).filter(Boolean);
+const members = resolveMembers(entry.data.members);
 const fmt = (d) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 const description = clip(excerptOf(entry));
 const jsonld = projectSchema({
@@ -45,13 +35,7 @@ const jsonld = projectSchema({
         <div class="author"><p>{fmt(entry.data.date)}</p></div>
         {author && <div class="author"><p>By <a href={`/author/${author.slug}/`}>{author.name}</a></p></div>}
       </div>
-      {members.length > 0 && (
-        <p class="project-members">Team: {members.map((m, i) => (
-          <span>{i > 0 ? ', ' : ''}{m.href
-            ? <a href={m.href} target={m.external ? '_blank' : undefined} rel={m.external ? 'noopener' : undefined}>{m.name}</a>
-            : m.name}</span>
-        ))}</p>
-      )}
+      <MemberList members={members} />
     </div>
     <div class={`hero-image${entry.data.image ? '' : ' no-image'}`} style={entry.data.image ? `background-image:url('${entry.data.image}')` : undefined}></div>
     <div class="text-block small-container">

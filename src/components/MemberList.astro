@@ -1,0 +1,13 @@
+---
+// "Team: …" line under a page title, from resolveMembers() in src/lib/members.ts.
+import type { ResolvedMember } from '../lib/members';
+
+const { members } = Astro.props as { members: ResolvedMember[] };
+---
+{members.length > 0 && (
+  <p class="project-members">Team: {members.map((m, i) => (
+    <span>{i > 0 ? ', ' : ''}{m.href
+      ? <a href={m.href} target={m.external ? '_blank' : undefined} rel={m.external ? 'noopener' : undefined}>{m.name}</a>
+      : m.name}</span>
+  ))}</p>
+)}
