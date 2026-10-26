@@ -108,4 +108,4 @@ External collaborators without a page: inline `{ name, url }` in a post's `membe
 - Red build in **Actions** = almost always a frontmatter typo (missing `---`, unquoted `title`, bad `date`, or a missing comma/quote in `team.ts`).
 - Renaming a file/slug changes its URL and breaks inbound links.
 - Don't delete `public/google….html` (Search Console verification).
-- Sitemap, search index, OG/Twitter tags, JSON-LD and `llms.txt` are all auto-generated — just add content.
+- Sitemap, search index, OG/Twitter tags, JSON-LD, `llms.txt` and `team.json` are all auto-generated — just add content. `team.json` is read by other sites (e.g. Seb's personal website), so team edits appear there too after their next build.

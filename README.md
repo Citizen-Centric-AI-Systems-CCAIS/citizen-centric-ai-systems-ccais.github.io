@@ -64,6 +64,7 @@ Related files:
 
 - **`public/robots.txt`** — allows all crawlers, including AI/LLM crawlers (GPTBot, ClaudeBot, PerplexityBot, …), and points to the sitemap. Block a specific bot by adding a `User-agent` block with `Disallow: /`.
 - **`sitemap-index.xml`** — generated at build by the `@astrojs/sitemap` integration (`astro.config.mjs`), covering every page. Submit it once in Google Search Console.
+- **`team.json`** — generated at build by `src/pages/team.json.ts`: a machine-readable copy of `src/data/team.ts` (slug, name, role, group, absolute photo and profile URLs, websites; no emails or biographies) for other sites that list CCAIS members, such as members' personal websites. Its schema is documented in the file; keep it backwards-compatible (bump `version` for breaking changes).
 - **`llms.txt`** — generated at build by `src/pages/llms.txt.ts` (the [llms.txt](https://llmstxt.org/) convention): a curated Markdown index of the site (about, projects, news, blog, outputs, team), built from the content collections so it stays in sync. Low-yield today — the major LLM crawlers mostly ignore it — but cheap, and used by some agent/IDE tooling.
 - **Google Search Console** verification uses `public/google*.html` (a static token file served at the site root); keep it in place so re-checks keep passing.
 
@@ -103,7 +104,7 @@ To reproduce the setup from scratch:
 3. Push (or run the workflow manually from the Actions tab) — it builds and publishes `dist/`.
 4. Custom domain: Settings -> Pages -> Custom domain = `ccais.ac.uk` (matches `site` in `astro.config.mjs`). Point the apex at GitHub Pages (A records to `185.199.108–111.153`) and add a `www` CNAME -> `<owner>.github.io` so `www` redirects to the apex. The `public/CNAME` file holds `ccais.ac.uk` so the custom domain persists across Actions deploys. Tick **Enforce HTTPS**.
 
-   The canonical host is the **apex** `ccais.ac.uk` (no `www`). Everything that emits URLs — canonical tags, the sitemap, Open Graph tags and `llms.txt` — derives from `site`/`SITE`, so keep those two in sync if the domain ever changes.
+   The canonical host is the **apex** `ccais.ac.uk` (no `www`). Everything that emits URLs — canonical tags, the sitemap, Open Graph tags, `llms.txt` and `team.json` — derives from `site`/`SITE`, so keep those two in sync if the domain ever changes.
 
 Important: the site uses root-absolute asset paths (`/wp-content/...`), so it
 must be served from a domain root — i.e. with a **custom domain** or an

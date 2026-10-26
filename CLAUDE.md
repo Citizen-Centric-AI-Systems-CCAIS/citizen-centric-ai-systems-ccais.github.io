@@ -24,14 +24,14 @@ Guidance for Claude Code working in this repository. Keep it concise and current
 - `src/data/team.ts` — single source of truth for people; the team page and each `/author/<slug>/` page are generated from it. `groups` defines the section headings; `collaborators` holds external people who have no CCAIS page.
 - `src/layouts/Base.astro` — page shell and all `<head>` metadata.
 - `src/lib/seo.ts` — site-wide Organization schema, JSON-LD builders, and `clip()`. `src/lib/excerpt.ts` — plain-text excerpts (used for summaries + meta descriptions).
-- `src/pages/` — routes; `llms.txt.ts` generates `/llms.txt`.
+- `src/pages/` — routes; `llms.txt.ts` generates `/llms.txt`; `team.json.ts` generates `/team.json` (team data for other sites — keep its schema backwards-compatible).
 - `public/` — served verbatim at the site root (images, favicons, `robots.txt`, the Google Search Console token). `originals/` — image masters, **not** deployed.
 - `docs/` — human documentation (the content guide). Not deployed.
 
 ## Conventions (easy to get wrong)
 
 - **SEO/metadata is centralised.** A page's description, Open Graph/Twitter tags and JSON-LD all come from `Base.astro` props (`description`, `image`, `ogType`, `jsonld`) fed by `src/lib/seo.ts`. New content detail page → pass `description` (usually `clip(excerptOf(entry))`), `image`, and the relevant builder's `jsonld`. New hand-built static page → pass a one-line `description=` (otherwise it falls back to the generic site description).
-- **Generated — do not hand-maintain:** the sitemap (`@astrojs/sitemap`), the search index (Pagefind), `llms.txt` (`src/pages/llms.txt.ts`), and all meta/JSON-LD. If the output is wrong, fix the generator, never the built file in `dist/`.
+- **Generated — do not hand-maintain:** the sitemap (`@astrojs/sitemap`), the search index (Pagefind), `llms.txt` (`src/pages/llms.txt.ts`), `team.json` (`src/pages/team.json.ts`), and all meta/JSON-LD. If the output is wrong, fix the generator, never the built file in `dist/`.
 - **Images:** put in `public/images/{news,projects,team}/`; reference with root-absolute paths (`/images/…`). Keep the masters in `originals/`.
 - **Team edits happen only in `src/data/team.ts`.** A member's `group` must match a `groups` heading. A `slug` is effectively permanent — it's the person's URL and is referenced by posts' `author`/`members`.
 - **Do not delete** `public/google*.html` (Search Console verification) or images still used by pages.
